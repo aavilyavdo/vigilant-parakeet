@@ -1,6 +1,3 @@
-2023_05_15_000000_create_files_table.php
-Add the routes to your Laravel API routes file:
-
 <?php
 
 use Illuminate\Support\Facades\Route;
@@ -11,4 +8,4 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/files', [FileController::class, 'index']);
     Route::delete('/files/{id}', [FileController::class, 'destroy']);
 });
-
+?>
